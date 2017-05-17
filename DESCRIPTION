@@ -1,2 +1,5 @@
 Type: Compendium
+Package: compendium
+Version: 0.1.0
 Depends: tidyverse, rmarkdown
+RoxygenNote: 6.0.1

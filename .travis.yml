@@ -3,4 +3,5 @@
 language: R
 sudo: false
 cache: packages
-script: R -f test.R
+script: R -e "devtools::install()"
+after_script: R -f test.R
