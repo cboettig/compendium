@@ -3,5 +3,5 @@ pipeline:
     image: cboettig/labnotebook:3.4.2
     commands:
       - R -e 'devtools::install(dep=TRUE)'
-      - R -e 'lapply(list.files(pattern=".*\\.Rmd", recursive=TRUE), rmarkdown::render)'
+      - R -e 'lapply(list.files(pattern=".*.Rmd", recursive=TRUE), rmarkdown::render)'
 
