@@ -6,3 +6,15 @@ cache: packages
 script: 
   - R -e "devtools::install(dep=TRUE)"
   - R -e 'lapply(list.files(pattern=".*.Rmd", recursive=TRUE), rmarkdown::render)'
+
+
+## Alternate recipe: use Docker instead of R travis
+#sudo: required
+#services:
+#  - docker
+#script:
+#  - docker run -ti -v $(pwd):/home/rstudio/repo -w /home/rstudio/repo \
+#    rocker/verse:3.4.2 \
+#    R -e 'lapply(list.files(pattern=".*.Rmd", recursive=TRUE), rmarkdown::render)'
+
+
