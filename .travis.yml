@@ -4,8 +4,10 @@ language: R
 sudo: false
 cache: packages
 script: 
-  - R -e "devtools::install(dep=TRUE)"
+## test that all .Rmd files can render 
   - R -e 'lapply(list.files(pattern=".*.Rmd", recursive=TRUE), rmarkdown::render)'
+## Optionally test  
+  - R -e 'lapply(list.files(pattern=".*.Rmd", recursive=TRUE), function(x) testthat::expect_length(lintr::lint(x),0))'
 
 
 ## Alternate recipe: use Docker instead of R travis
@@ -17,17 +19,6 @@ script:
 #  - docker run -ti -v $(pwd):/home/rstudio/repo -w /home/rstudio/repo \
 #    rocker/verse:3.4.2 \
 #    R -e 'lapply(list.files(pattern=".*.Rmd", recursive=TRUE), rmarkdown::render)'
-
-## Test on current version
-#  - docker run -ti -v $(pwd):/home/rstudio/repo -w /home/rstudio/repo \
-#    rocker/verse:latest \
-#    R -e 'lapply(list.files(pattern=".*.Rmd", recursive=TRUE), rmarkdown::render)'
-
-## Test on devel 
-#  - docker run -ti -v $(pwd):/home/rstudio/repo -w /home/rstudio/repo \
-#    rocker/verse:devel \
-#    R -e 'lapply(list.files(pattern=".*.Rmd", recursive=TRUE), rmarkdown::render)'
-
 
 
 

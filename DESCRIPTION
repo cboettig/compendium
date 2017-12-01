@@ -1,4 +1,4 @@
 Type: Compendium
 Package: compendium
 Version: 0.1.0
-Depends: tidyverse, rmarkdown
+Depends: tidyverse
