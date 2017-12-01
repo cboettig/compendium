@@ -2,3 +2,5 @@ Type: Compendium
 Package: compendium
 Version: 0.1.0
 Depends: tidyverse
+Imports: rmarkdown, testthat, lintr
+
