@@ -1,7 +1,7 @@
 # compendium
 
 [![Travis-CI Build Status](https://travis-ci.org/cboettig/compendium.svg?branch=master)](https://travis-ci.org/cboettig/compendium)
-[![Build Status](https://drone.carlboettiger.info/api/badges/cboettig/compendium/status.svg)](https://drone.carlboettiger.info/cboettig/compendium)
+
 
 ## An example / template repository for an R compendium
 
