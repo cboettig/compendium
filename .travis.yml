@@ -3,11 +3,11 @@
 language: R
 sudo: false
 cache: packages
-script: 
-## test that all .Rmd files can render 
-  - R -e 'lapply(list.files(pattern=".*.Rmd", recursive=TRUE), rmarkdown::render)'
-## Optionally test  
-  - R -e 'lapply(list.files(pattern=".*.Rmd", recursive=TRUE), function(x) testthat::expect_length(lintr::lint(x),0))'
+
+#script: 
+#  - R -e 'lapply(list.files(pattern=".*.Rmd", recursive=TRUE), rmarkdown::render)'
+## Optionally check linting as well
+#  - R -e 'lapply(list.files(pattern=".*.Rmd", recursive=TRUE), function(x) testthat::expect_length(lintr::lint(x),0))'
 
 
 ## Alternate recipe: use Docker instead of R travis
