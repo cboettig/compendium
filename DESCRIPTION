@@ -1,5 +1,4 @@
-Type: Compendium
-Package: compendium
+Project: compendium
 Version: 0.1.0
 Depends: tidyverse, rmarkdown, testthat, lintr
 
