@@ -1,6 +1,7 @@
 Package: compendium
 Version: 0.1.0
-Depends: tidyverse, rmarkdown, testthat, lintr
+Depends: tidyverse
+Suggests: rmarkdown, testthat, lintr, knitr
 License: CC0
 Title: Compendium Package
 Description: A template for a research compendium.  Modify this
@@ -11,3 +12,4 @@ Authors@R: c(person("Carl", "Boettiger",
                     comment=c(ORCID = "0000-0002-1642-628X")))
 RoxygenNote: 6.1.0
 Encoding: UTF-8
+VignetteBuilder: knitr

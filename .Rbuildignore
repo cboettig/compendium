@@ -1,7 +1,6 @@
 ^\.travis\.yml$
 ^\.drone\.yml$
 ^\.circleci$
-^notebooks$
 ^appveyor\.yml$
 ^.*\.Rproj$
 ^\.Rproj\.user$
