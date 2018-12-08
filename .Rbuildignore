@@ -1,1 +1,8 @@
+^docs$
+^_pkgdown\.yml$
 ^\.travis\.yml$
+^\.drone\.yml$
+^\.circleci$
+^appveyor\.yml$
+^.*\.Rproj$
+^\.Rproj\.user$

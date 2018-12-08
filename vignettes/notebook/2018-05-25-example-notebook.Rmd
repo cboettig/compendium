@@ -1,6 +1,10 @@
 ---
 title: "Assignment1"
 output: github_document
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---
 
 ```{r setup, include=FALSE}
@@ -17,6 +21,8 @@ You can include R code in the document as follows:
 
 ```{r cars}
 summary(cars)
+
+#stop("Oh no, an ERROR!")
 ```
 
 ## Including Plots
