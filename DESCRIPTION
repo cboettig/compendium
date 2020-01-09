@@ -2,7 +2,7 @@ Package: compendium
 Project: 
 Version: 0.1.0
 Depends: tidyverse
-Suggests: rmarkdown, rticles, hrbrthemes, ggthemes, Cairo, patchwork
+Suggests: rmarkdown, rticles, hrbrthemes, ggthemes, Cairo, patchwork, ggtext
 License: CC0
 Title: Compendium Package
 Description: A generic description file for dependency management of this research
