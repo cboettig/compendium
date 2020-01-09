@@ -7,10 +7,11 @@ jobs:
     steps:
       - name: Install dependencies
         run: |-
-          Rscript -e "install.packages('remotes', repos = 'https://demo.rstudiopm.com/all/__linux__/bionic/latest')"
-          Rscript -e "remotes::install_deps(dependencies = TRUE, repos = 'https://demo.rstudiopm.com/all/__linux__/bionic/latest')"
-      - name: Render mansucript
-        run: |-
-          Rscript -e "lapply(fs::dir_ls('manuscript', glob='*.Rmd', recurse=TRUE), reprex::reprex_render)"      - name: Render README
+           R -e "fs::dir_ls()"
+#          Rscript -e "install.packages('remotes', repos = 'https://demo.rstudiopm.com/all/__linux__/bionic/latest')"
+#          Rscript -e "remotes::install_deps(dependencies = TRUE, repos = 'https://demo.rstudiopm.com/all/__linux__/bionic/latest')"
+#      - name: Render mansucript
+#        run: |-
+#          Rscript -e "lapply(fs::dir_ls('manuscript', glob='*.Rmd', recurse=TRUE), reprex::reprex_render)"      - name: Render README
 
 
