@@ -1,10 +1,10 @@
 name: Docker Actions
 on: [push]
 jobs:
-  container: 
+  my_job: 
     runs-on: ubuntu-latest
-      container: rocker/geospatial
-      steps:
-        - run: |
+    container: rocker/geospatial
+    steps:
+      - run: |
             R --vesion
 
