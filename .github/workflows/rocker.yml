@@ -8,8 +8,8 @@ jobs:
       - uses: actions/checkout@v1
       - name: Install dependencies
         run: |-
-          installGithub.r clauswilke/ggtext
-          Rscript -e "remotes::install_deps(dependencies = TRUE)"
+          installGithub.r --update FALSE clauswilke/ggtext
+#          Rscript -e "remotes::install_deps(dependencies = TRUE)"
       - name: Render mansucript
         run: |-
           Rscript -e "lapply(fs::dir_ls('manuscript', glob='*.Rmd', recurse=TRUE), reprex::reprex_render)"
