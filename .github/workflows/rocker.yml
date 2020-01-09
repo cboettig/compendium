@@ -6,18 +6,20 @@ jobs:
     container: rocker/verse
     steps:
       - uses: actions/checkout@v1
-#      - name: Clone repository
-#        run: |-
-#          git clone https://github.com/${GITHUB_REPOSITORY}
       - name: Install dependencies
         run: |-
-#          cd `basename ${GITHUB_REPOSITORY}`
           ls
           pwd
           Rscript -e "install.packages('remotes', repos = 'https://demo.rstudiopm.com/all/__linux__/bionic/latest')"
           Rscript -e "remotes::install_deps(dependencies = TRUE, repos = 'https://demo.rstudiopm.com/all/__linux__/bionic/latest')"
+
+
 #      - name: Render mansucript
 #        run: |-
 #          Rscript -e "lapply(fs::dir_ls('manuscript', glob='*.Rmd', recurse=TRUE), reprex::reprex_render)"      - name: Render README
+#      - name: Clone repository
+#        run: |-
+#          git clone https://github.com/${GITHUB_REPOSITORY}
+#          cd `basename ${GITHUB_REPOSITORY}`
 
 
