@@ -2,6 +2,7 @@ name: Docker Actions
 on: [push]
 jobs:
   my_job: 
+    runs-on: ubuntu-latest
     container: rocker/verse
     steps:
       - name: Install dependencies
