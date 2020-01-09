@@ -6,9 +6,10 @@ jobs:
     container: rocker/verse
     steps:
 #      - uses: actions/checkout@v1
-      - name: clone
+      - name: Clone repository
         run: |-
           git clone https://github.com/${GITHUB_REPOSITORY}
+      - name: Install dependencies
         run: |-
           cd ${GITHUB_REPOSITORY}
           Rscript -e "install.packages('remotes', repos = 'https://demo.rstudiopm.com/all/__linux__/bionic/latest')"
