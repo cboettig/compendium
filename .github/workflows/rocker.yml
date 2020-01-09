@@ -3,8 +3,8 @@ on: [push]
 jobs:
   my_job: 
     runs-on: ubuntu-latest
-    container: rocker/verse
     steps:
+      - uses: docker://rocker/verse
       - name: Install dependencies
         run: |-
            R -e "fs::dir_ls()"
