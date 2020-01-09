@@ -3,11 +3,12 @@ on: [push]
 jobs:
   my_job: 
     runs-on: ubuntu-latest
+    container: rocker/verse
     steps:
-      - uses: docker://rocker/verse
+      - uses: actions/checkout@v1
       - name: Install dependencies
-        run: |-
-           R -e "fs::dir_ls()"
+       run: |-
+           R -e "fs::path_wd()"
 #          Rscript -e "install.packages('remotes', repos = 'https://demo.rstudiopm.com/all/__linux__/bionic/latest')"
 #          Rscript -e "remotes::install_deps(dependencies = TRUE, repos = 'https://demo.rstudiopm.com/all/__linux__/bionic/latest')"
 #      - name: Render mansucript
