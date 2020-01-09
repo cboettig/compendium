@@ -1,9 +1,10 @@
 name: Docker Actions
 on: [push]
 jobs:
-  my_job:
-    container:
-      image: rocker/geospatial
-      volumes:
-        - .:/data
-      command: R --version
+  container: 
+    runs-on: ubuntu-latest
+      container: rocker/geospatial
+      steps:
+        - run: |
+            R --vesion
+
