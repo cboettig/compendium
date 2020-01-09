@@ -2,7 +2,7 @@ name: Docker Actions
 on: [push]
 jobs:
   runs-on: ubuntu-latest
-    container: rocker/geospatial
-    steps:
-      - run: |
-          R --version
+  container: rocker/geospatial
+  steps:
+    - run: |
+        R --version
