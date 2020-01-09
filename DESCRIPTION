@@ -1,6 +1,6 @@
 Package: compendium
 Project: my project
-Version: 0.1.0
+Version: 0.2.0
 Depends: tidyverse
 Suggests: rmarkdown, testthat, lintr, knitr
 License: CC0
