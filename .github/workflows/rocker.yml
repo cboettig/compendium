@@ -1,0 +1,9 @@
+name: Docker Actions
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run with Docker
+      run: docker run --rm -ti rocker/geospatial R --version
