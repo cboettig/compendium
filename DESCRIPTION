@@ -1,12 +1,13 @@
 Package: compendium
-Project: my project
-Version: 0.2.0
+Project: 
+Version: 0.1.0
 Depends: tidyverse
-Suggests: rmarkdown, testthat, lintr, knitr
+Suggests: rmarkdown, rticles, hrbrthemes, ggthemes, Cairo, patchwork, ggtext
 License: CC0
 Title: Compendium Package
-Description: A template for a research compendium.  Modify this
-             description appropriately for your own compendium.
+Description: A generic description file for dependency management of this research
+  compendium.  See <https://doi.org/10.1080/00031305.2017.1375986> for a description
+  of the compendium approach to organizing a reproducible research project. 
 Authors@R: c(person("Carl", "Boettiger", 
                     email = "cboettig@gmail.com", 
                     role = c("aut", "cre", "cph"),
@@ -14,3 +15,4 @@ Authors@R: c(person("Carl", "Boettiger",
 RoxygenNote: 6.1.1
 Encoding: UTF-8
 VignetteBuilder: knitr
+Remotes: thomasp85/patchwork, clauswilke/ggtext
