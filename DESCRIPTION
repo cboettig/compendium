@@ -1,8 +1,6 @@
 Package: compendium
 Project: 
 Version: 0.1.0
-Depends: tidyverse
-Suggests: rmarkdown, rticles, hrbrthemes, ggthemes, Cairo, patchwork, ggtext
 License: CC0
 Title: Compendium Package
 Description: A generic description file for dependency management of this research
@@ -14,5 +12,4 @@ Authors@R: c(person("Carl", "Boettiger",
                     comment=c(ORCID = "0000-0002-1642-628X")))
 RoxygenNote: 6.1.1
 Encoding: UTF-8
-VignetteBuilder: knitr
-Remotes: thomasp85/patchwork, clauswilke/ggtext
+
