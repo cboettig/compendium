@@ -10,6 +10,6 @@ Authors@R: c(person("Carl", "Boettiger",
                     email = "cboettig@gmail.com", 
                     role = c("aut", "cre", "cph"),
                     comment=c(ORCID = "0000-0002-1642-628X")))
-RoxygenNote: 6.1.1
+Suggests: rmarkdown        
 Encoding: UTF-8
 
