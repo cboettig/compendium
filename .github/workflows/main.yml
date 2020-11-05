@@ -4,7 +4,7 @@ name: Render manuscript
 
 jobs:
   render:
-    name: Render manusript
+    name: Render RMarkdown
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v1
