@@ -4,11 +4,14 @@ jobs:
   my_job: 
     runs-on: ubuntu-latest
     container: rocker/verse
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Install dependencies
         run: |-
           installGithub.r --update FALSE clauswilke/ggtext
+          install2.r fs
           Rscript -e "remotes::install_deps(dependencies = TRUE)"
       - name: Render mansucript
         run: |-
